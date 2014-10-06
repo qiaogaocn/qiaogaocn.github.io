@@ -1,0 +1,25 @@
+---
+layout: page-sidebar
+title: "关于本站"
+description: ""
+postphoto: "default"
+group: navigation
+---
+{% include JB/setup %}
+
+<h2>关于这个网站：</h2>
+<p>这是一个由高桥建立并拥有的个人网站。</p>
+<p>作为一个从小就梦想拥有自己的个人网站的人，可以想见当我真的决定着手去做这件事的时候是多么的兴奋。尽管没有任何网页编程的知识背景，我几乎自学了相关的一切，包括HTML，CSS，Rake等。然而，没有他人的帮助，我也绝对无法走到这一步。感谢长期以来父母对我的支持，是你们告诉我永远不要放弃梦想。感谢那些帮我测试网站并毫无保留地提出建议的朋友们，感谢W3school 提供如此简单易懂的在线课程。当然还有Github和Jekyll，感谢开源的作者，是你们让网站开发变得非常容易。</p>
+	
+<p>这里，只是一个功能简单，毫无装饰的小网站，但是到了今天我才真正明白：在这个现代化的世界中，即使最简单的事物,也凝聚着人们的热情、努力和梦想。</p>
+
+<p class="justifyp">最后，感谢所有读到这里的人！</p>
+<hr>
+
+
+<h2>All Pages</h2>
+<ul>
+{% assign pages_list = site.pages %}
+{% assign group = 'other' %}
+{% include JB/pages_list %}
+</ul>

@@ -1,0 +1,49 @@
+<div class="sidebar-right">
+  <div class="radius_border">
+    <div class="content">
+	   <div class="label-box">
+       <div class="contain-box">
+	       <p><strong>作者：</strong></p>
+       </div>	 
+	 </div>
+	  <div class="contain-box">
+	  <div class="profile-box">
+        <a href="{{ BASE_PATH }}/BIO.html"><img src="{{ BASE_PATH }}/images/avatar.jpg"></a>
+	  </div>
+	    <h6>大家好,</h6>
+		<h6>我叫 <a href="{{ BASE_PATH }}/BIO.html">高桥</a>. 我是伊利诺伊理工大学电子工程专业的研究生。我的主要研究方向是集成电路设计。目前正在寻找心仪的工作。。。<a href="{{ BASE_PATH }}/BIO.html">(more)</a></h6>
+        <hr>
+		<h6>联系方式：</h6>
+		<h6>电话: （＋86）13949020750</h6>
+		<h6>Email: <a href="mailto:gqplus2@hotmail.com">gqplus2@hotmail.com</a></h6>
+	 </div>
+    </div>
+   </div>
+   <div class="radius_border">
+    <div class="content">
+	   <div class="label-box">
+        <div class="contain-box">
+	       <p><strong>近期项目：</strong></p>
+        </div>	 
+	   </div>
+	   <div class="contain-box">
+{% for post in site.posts %}
+	{% if post.group == 'works' %}
+        <div class="work-nav">
+		    <a href="{{ BASE_PATH }}{{ post.url }}">
+			    <div class="work-imgbox">
+				    <div class="content">
+                    <h6>{{post.category}}</h6>
+					</div>
+		        </div>
+			</a>
+			<div class="work-titletag">
+			    <h6><a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title }}</a></h6>
+			</div>
+		</div>
+    {% endif %}
+{% endfor %}
+        </div>
+    </div>
+   </div>
+ </div>
