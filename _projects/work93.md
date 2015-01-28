@@ -1,5 +1,6 @@
 ---
-layout: post
+layout: project
+date: 2014-01-21T00:00:08
 title: "NoC Implementation of Butterfly Fourier Algorithm"
 description: ""
 postphoto: "default"
